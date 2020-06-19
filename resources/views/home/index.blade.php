@@ -8,8 +8,9 @@
 	<img src="img/logo.jpg"  class = "logo">
 
 	<div class = "nav-bar">
+
 	<ul>
-	  <li><a href="{{ url('/') }}">HOME</a></li>
+	  <li><a class="active" href="{{ url('/') }}">HOME</a></li>
 	  <li><a href="{{ url('about') }}">ABOUT US</a></li>
 	  <li><a href="{{ url('blog') }}">FITNESS BLOG</a></li>
 	  <li><a href="{{ url('store') }}">ONLINE STORE</a></li>

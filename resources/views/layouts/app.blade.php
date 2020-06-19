@@ -9,7 +9,10 @@
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/bootstrap-reboot.css">
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="{{ url('css/style.css') }}">
+
+
+
 
 	<script src="js/bootstrap.js" ></script>
 	<script src="js/bootstrap.min.js" ></script>

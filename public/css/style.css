@@ -32,6 +32,12 @@ li a:hover {
   text-decoration: none;
 }
 
+.active {
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+}
+
 
 .logo{
   margin-left: 15px;
