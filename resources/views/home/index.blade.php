@@ -48,19 +48,24 @@
 		<div class = "login-form">
 				<div class="card">
 					<div class="card-body">
-						<form>
+						<form action="{{url('post-login')}}" method="POST">
+
+						{{ csrf_field() }}
+
 							<div class="input-group form-group">
-								<input type="text" class="form-control" placeholder="username">	
+								<input type="text" class="form-control" placeholder="email" name="email">	
+								@if ($errors->has('email'))
+								<span class="error">{{ $errors->first('email') }}</span>
+								@endif   
 							</div>
 							<div class="input-group form-group">
-								<input type="password" class="form-control" placeholder="password">
+								<input type="password" class="form-control" placeholder="password" name="password">
+								@if ($errors->has('password'))
+								<span class="error">{{ $errors->first('password') }}</span>
+								@endif 
 							</div>
 							<div class="form-group">
-                                <button type="submit" class="btn float-left login_btn" >
-								<a href="{{ url('admin') }}"
-								style="color: inherit; text-decoration:none;">
-								Login 
-								</a></button>
+                                <button type="submit" class="btn float-left login_btn" >Login</button>
                            
                                 <!-- <input type="submit" value="Login" class="btn float-left login_btn"> -->
                             
